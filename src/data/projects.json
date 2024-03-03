@@ -1,25 +1,25 @@
 [
     {
-      "title": "Project A",
-      "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "title": "Rate This Movie",
+      "imageSrc": "project/movie.png",
+      "description": "This is for CRUD web applicaiton for movie rating  and review. The user can search the movie and rate the movie and write a review.",
+      "skills": ["React", "Node.js"],
+      "demo": "https://ratethismovie.netlify.app",
+      "source": "https://github.com/K0725/movie_recommendor"
     },
     {
-      "title": "Project B",
-      "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node", "Sass"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
+      "title": "Behavioral Research Project",
+      "imageSrc": "project/Research.png",
+      "description": "This is a web applicaiton for experiment for psychological research.",
+      "skills": ["React", "Node", "Sass"],
+      "demo": "https://okamoto-poaching.vercel.app/",
+      "source": "https://github.com/K0725/behavrioral_project/tree/backend/frontend"
     },
     {
-      "title": "Project C",
-      "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
+      "title": "Hostable",
+      "imageSrc": "project/Hostable.png",
+      "description": "This is a start app idea that I am currently working on... ",
+      "skills": ["React", "Express", "Node", "AWS", "PostgreSQL", "Go"],
       "demo": "https://www.example.com",
       "source": "https://www.github.com"
     }

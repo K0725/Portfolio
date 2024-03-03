@@ -1,24 +1,29 @@
 import React from "react";
-
 import styles from "./Me.module.css";
-
 import { getImageUrl } from "../../utils";
+import { useNavigate } from 'react-router-dom';
 
-export const Me = () => {
+const Me = () => {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate('/ContactForm');
+  };
+
   return (
     <section className={styles.container}>
       <div className={styles.content}>
         <h1 className={styles.title}>Hi, I'm Koki </h1>
         <p className={styles.description}>
-          I'm a full-stack developer with interest in Backend Development!
+          I'm a currently a student at Cal Poly Pomona studying CS. My interest liesm in Web Development and Data Science. I am actively lookiong for Summer & Fall Software Engineering internship for 2024! 
         </p>
-        <a href="mailto: kokiyama077@email.com" className={styles.contactBtn}>
+        <button onClick={handleContactClick} className={styles.contactBtn}>
           Contact Me
-        </a>
+        </button>
       </div>
       <img
         src={getImageUrl("Me/mee.png")}
-        alt="Hero image of me"
+        alt="image of me"
         className={styles.heroImg}
       />
       <div className={styles.topBlur} />
@@ -26,3 +31,5 @@ export const Me = () => {
     </section>
   );
 };
+
+export default Me;
