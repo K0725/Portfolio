@@ -16,11 +16,11 @@
       "source": "https://github.com/K0725/behavrioral_project/tree/backend/frontend"
     },
     {
-      "title": "Hostable",
-      "imageSrc": "project/Hostable.png",
-      "description": "This is a start app idea that I am currently working on... ",
-      "skills": ["React", "Express", "Node", "AWS", "PostgreSQL", "Go"],
-      "demo": "https://www.example.com",
+      "title": "ImageRecognition",
+      "imageSrc": "project/image_recognition.png",
+      "description": "Applicaiton for reconizing the image of pictures",
+      "skills": ["React", "AWS", "ImageRekognition", "S3", "DynamoDB"],
+      "demo": "https://www.youtube.com/watch?v=FamOZDTTqPE",
       "source": "https://www.github.com"
     }
   ]

@@ -1,36 +1,35 @@
 import React from "react";
-
-import styles from "./ProjectCard.module.css";
+import styles from "./Projects.module.css";
 import { getImageUrl } from "../../utils";
 
 export const ProjectCard = ({
   project: { title, imageSrc, description, skills, demo, source },
 }) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.projectCard}>
       <img
         src={getImageUrl(imageSrc)}
         alt={`Image of ${title}`}
-        className={styles.image}
+        className={styles.projectImage}
       />
-      <h3 className={styles.title}>{title}</h3>
-      <p className={styles.description}>{description}</p>
-      <ul className={styles.skills}>
-        {skills.map((skill, id) => {
-          return (
+      <div className={styles.projectInfo}>
+        <h3 className={styles.projectTitle}>{title}</h3>
+        <p className={styles.projectDescription}>{description}</p>
+        <ul className={styles.projectSkills}>
+          {skills.map((skill, id) => (
             <li key={id} className={styles.skill}>
               {skill}
             </li>
-          );
-        })}
-      </ul>
-      <div className={styles.links}>
-        <a href={demo} className={styles.link}>
-          Demo
-        </a>
-        <a href={source} className={styles.link}>
-          Source
-        </a>
+          ))}
+        </ul>
+        <div className={styles.projectLinks}>
+          <a href={demo} className={styles.projectLink}>
+            Demo
+          </a>
+          <a href={source} className={styles.projectLink}>
+            Source
+          </a>
+        </div>
       </div>
     </div>
   );
