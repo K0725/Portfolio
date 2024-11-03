@@ -17,10 +17,10 @@ const Me = () => {
         <h1 className={styles.title}>Hi, I'm Koki</h1>
         <TypeAnimation
           sequence={[
-            "I'm currently a student at Cal Poly Pomona studying CS. My interest lies in Web Development and Cloud development.",
-            1000, // Waits 1s
-            "I am currently looking for new grad positions and internships!",
-            1000, // Waits 1s
+            "I'm currently a student at Cal Poly Pomona studying CS",
+            1000,
+            "My interest lies in Web Dev and Cloud Dev.",
+            1000
           ]}
           wrapper="p"
           cursor={true}
